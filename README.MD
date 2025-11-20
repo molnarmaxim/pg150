@@ -32,3 +32,4 @@ Szintén a láblécben jelenjen meg az iskola elérhetősége és a copyright in
 # Desgin Ideas
 
 Egy teljes képes main page középen címmel alatta a navbar (nav:hover -> alahuzott), kép az iskolárol, logo
+Többi oldalon pedig navbar

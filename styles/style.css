@@ -3,21 +3,77 @@ body {
     font-family: "IBM Plex Serif", serif;
     font-weight: 400;
     font-size: 20px;
+    color: #1f3864;
     font-style: normal;
+    background-color: whitesmoke;
+    margin: 0;
 }
 
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
     text-align: center;
+    position: relative;
 }
 
-
-a {
-    text-decoration: none;
+nav a {
     color: black;
-    font-weight: 500;
+    text-decoration: none;
+    margin: 0 15px;
+    letter-spacing: 3px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+
+.content {
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.scroll-indicator::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 8px;
+    background-color: black;
+    border-radius: 2px;
+    animation: scroll 1.5s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+        top: 8px;
+    }
+    100% {
+        opacity: 0;
+        top: 25px;
+    }
 }

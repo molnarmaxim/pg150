@@ -5,7 +5,7 @@
 # Task: 
 Főmenü
 Logó: Itt a bevezető szöveg jelenik meg
-Tanítóképző: #311d1f, #fcf5a8
+Tanítóképző: #311d1f, #fcf5a8ff
 Testnevelési Gimnázium: #1f3864, #bbd5ed
 Petőfi Gimnázium: #385723, #ccffcc
 Gépészeti Szakközépiskola: #636466, #dcddde

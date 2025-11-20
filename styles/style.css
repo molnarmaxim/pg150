@@ -7,6 +7,7 @@ body {
     font-style: normal;
     background-color: whitesmoke;
     margin: 0;
+
 }
 
 .container {
@@ -18,13 +19,35 @@ body {
     width: 100%;
     text-align: center;
     position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    z-index: -1;
+}
+
+nav img {
+    width: 80px;
+    margin-right: 20px;
 }
 
 nav a {
-    color: black;
+    color: white;
     text-decoration: none;
     margin: 0 15px;
     letter-spacing: 3px;
+    font-weight: 400;
 }
 
 a:hover {
@@ -34,6 +57,11 @@ a:hover {
 .container h1 {
     font-size: 60px;
     letter-spacing: 3px;
+}
+.container p {
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
 }
 
 .content {
@@ -50,7 +78,7 @@ a:hover {
     transform: translateX(-50%);
     width: 30px;
     height: 50px;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 15px;
 }
 
@@ -62,7 +90,7 @@ a:hover {
     transform: translateX(-50%);
     width: 4px;
     height: 8px;
-    background-color: black;
+    background-color: white;
     border-radius: 2px;
     animation: scroll 1.5s infinite;
 }
@@ -76,4 +104,9 @@ a:hover {
         opacity: 0;
         top: 25px;
     }
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 18px; 
 }

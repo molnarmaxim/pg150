@@ -76,6 +76,10 @@ a:hover {
     margin: 0 auto;
     line-height: 1.6;
 }
+.content a {
+    color: #1f3864;
+    text-decoration: underline;
+}
 
 .scroll-indicator {
     position: absolute;
@@ -115,6 +119,11 @@ a:hover {
 .footer-text {
     text-align: center;
     font-size: 14px; 
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     padding: 0;
+}
+
+.content {
+    background-color: white;
 }

@@ -27,3 +27,8 @@ Gépészei szakközépiskola
 Szent Benedek Technikum
 Adatkezelési tájékoztató
 Szintén a láblécben jelenjen meg az iskola elérhetősége és a copyright információk
+
+
+# Desgin Ideas
+
+Egy teljes képes main page középen címmel alatta a navbar (nav:hover -> alahuzott), kép az iskolárol, logo

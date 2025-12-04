@@ -1,0 +1,41 @@
+.memories-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.memory-item {
+    width: 60%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.memory-item h3 {
+    margin-bottom: 10px;
+}
+.memory-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.memory-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#backbtn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+}

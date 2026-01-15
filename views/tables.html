@@ -6,6 +6,7 @@
     <title>PG150 | Képek</title>
     <link rel="stylesheet" href="../styles/videos.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/tables.css">
 </head>
 <body>
     <button id="backbtn" onclick="window.location.href='../index.html'">Vissza a főoldalra</button>
@@ -16,6 +17,29 @@
         <div class="scroll-indicator"></div>
     </div>
 
+    <section class="gallery-section">
+        <div class="gallery-grid" id="gallery">
+            <img src="../assets/pg1.jpg" alt="PG 1" data-index="0" data-caption="PG 1">
+            <img src="../assets/pg2.jpg" alt="PG 2" data-index="1" data-caption="PG 2">
+            <img src="../assets/pg3.jpg" alt="PG 3" data-index="2" data-caption="PG 3">
+            <img src="../assets/pg4.jpg" alt="PG 4" data-index="3" data-caption="PG 4">
+            <img src="../assets/pg5.jpg" alt="PG 5" data-index="4" data-caption="PG 5">
+            <img src="../assets/pg6.jpg" alt="PG 6" data-index="5" data-caption="PG 6">
+        </div>
+
+        <div id="lightbox" aria-hidden="true">
+            <button class="close-btn" id="lb-close" aria-label="Close">✕</button>
+            <div class="lightbox-controls">
+                <button class="lightbox-btn" id="lb-prev" aria-label="Previous">◀</button>
+                <button class="lightbox-btn" id="lb-next" aria-label="Next">▶</button>
+            </div>
+            <div class="lightbox-content">
+                <img id="lb-image" src="" alt="" />
+                <div class="lightbox-caption" id="lb-caption"></div>
+            </div>
+        </div>
+    </section>
+
     <div class="videos-container">
         <img src="../assets/table1.jpg" alt="Tabló 1">
         <p>Leírás az 1. tablóról</p>
@@ -23,6 +47,8 @@
     </div>
     <hr>
     <p class="footer-text">&copy; Kovács Zoltán programozótársulat ev.<br>Made by Talio with ❤️ and ☕️<br></p>
+
+    <script src="../scripts/gallery.js"></script>
 
 </body>
 </html>

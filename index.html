@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PG150 | Főoldal</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
+    <div id="intro-overlay">
+        <video id="intro-video" autoplay muted playsinline>
+            <source src="assets/vid.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
     <div class="container">
         <img class="logo" src="../assets/logo150.png" alt="PG 150 Logo">
         <p>Üdvözöljük a PG 150. évfordulójának ünnepoldalán!</p>
@@ -69,5 +75,30 @@
     </div>
     <p class="footer-text">&copy; Kovács Zoltán programozótársulat ev.<br>Made by Talio with ❤️ and ☕️<br></p>
 
+    <script>
+        const video = document.getElementById('intro-video');
+        const overlay = document.getElementById('intro-overlay');
+    
+        if (video) {
+            video.onended = function() {
+                overlay.classList.add('hidden');
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                }, 1000);
+            };
+
+            // Optional: Dismiss on click
+            overlay.addEventListener('click', () => {
+                video.pause();
+                overlay.classList.add('hidden');
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                }, 1000);
+            });
+            
+            // Attempt to play
+            video.play().catch(e => console.log(e));
+        }
+    </script>
 </body>
 </html>
